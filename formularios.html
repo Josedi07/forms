@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-color: #302843;
+        }
+        div{
+            background-color: #b1abee;
+            width: 60vw;
+            margin: auto;
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <div>
+            <h1>Formularios</h1>
+        
+            <label for="search">Buscar palabras</label>
+            <input type="search" id="search" name="search"><br><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe aquí..." maxlength="10" minlength="3"><br><br>
+            
+            <label for="apellido1">Primer apellido:</label>
+            <input type="text" id="apellido1" name="apellido1" placeholder="Escribe aquí..."><br><br>
+            
+            <label for="apellido2">Segundo apellido:</label>
+            <input type="text" name="apellido2" id="apellido2" placeholder="Escribe aquí..."><br><br>
+            
+            <label for="edad">Indica tu edad</label>
+            <input type="number" name="edad" id="edad" min="18" max="68"> <br><br>
+            
+            <label for="email">Ingrese tu correo electrónico</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="password">Ingresa tu contraseña</label>
+            <input type="password" id="password" name="password" minlength="8"><br><br>
+            
+            <label for="fecha_nacimiento">Indica tu fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"> <br><br>
+            
+            <label for="color">Color favorito</label>
+            <input type="color" id="color" name="color"> <br><br>
+            
+            <label for="web">Valora esta web</label>
+            <input type="range" id="web" name="web"> <br><br>
+            
+            <label for="tel">Ingrese su teléfono</label>
+            <input type="tel" id="tel" name="tel"> <br><br>
+            
+            <label for="cv">Adjunte su CV</label>
+            <input type="file" id="cv" name="cv"> <br><br>
+            
+            <label for="hora_envio">Hora a la que se envió el formulario</label>
+            <input type="datetime-local" id="hora_envio" name="hora_envio"> <br><br>
+            
+            <label for="img">Adjunta imagen</label>
+            <input type="image" src="../Img/home.svg" id="img" name="img"><br><br>
+            
+            <label for="mes">Mes favorito</label>
+            <input type="month" id="mes" name="mes"> <br><br>
+            
+
+            <label for="hora">Hora de entrada al trabajo</label>
+            <input type="time" id="hora" name="hora"> <br><br>
+            
+            <label for="url">Indica la URL de tu blog</label>
+            <input type="url" id="url" name="url"> <br><br>
+            
+            <label for="week">Elige una semana de Mayo o Junio</label>
+            <input type="week" id="week" name="week" min="2018-W18" max="2018-W26"> <br><br>
+            
+            <br><br>
+
+            <fieldset>
+                <legend>Indica tu sexo</legend>
+
+                <input type="radio" id="masc" name="sexo">
+                <label for="masc">Masculino</label><br>
+                
+                <input type="radio" id="fem" name="sexo">
+                <label for="fem">Femenino</label><br>
+                
+                <input type="radio" id="otro" name="sexo">
+                <label for="otro">Prefiero no contestar</label><br><br>
+
+            </fieldset>
+
+            <h2>Selecciona tus hobbies</h2>
+
+            <input type="checkbox" id="hobby1" name="hobby1">
+            <label for="hobby1">Jugar videojuegos</label><br>
+            
+            <input type="checkbox" id="hobby2" name="hobby2">
+            <label for="hobby2">Pasear</label><br>
+            
+            <input type="checkbox" id="hobby3" name="hobby3">
+            <label for="hobby3">Leer</label><br><br>
+
+            <fieldset>
+                <legend>A que provincia perteneces</legend>
+                    <select name="provincias" id="provincias" required>
+                        <option value=""></option>
+                        <option value="Cáceres">Cáceres</option>
+                        <option value="Badajoz">Badajoz</option>
+                    </select>
+
+            </fieldset><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </div>
+    </form>
+
+    
+</body>
+</html>
